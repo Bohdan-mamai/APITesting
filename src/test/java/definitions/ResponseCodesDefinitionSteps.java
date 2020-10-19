@@ -5,11 +5,11 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import steps.SampleTestPetStore;
+import steps.ResponseCodesTestPetStore;
 
-public class DefinitionSteps {
+public class ResponseCodesDefinitionSteps {
     @Steps
-    SampleTestPetStore rest;
+    ResponseCodesTestPetStore rest;
 
     @Given("User place an order")
     public void userPlaceAnOrderWith() {

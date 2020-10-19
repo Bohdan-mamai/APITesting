@@ -2,16 +2,17 @@ package steps;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import order.EnvironmentPropertyLoader;
-import order.Order;
+import core.order.Config;
+import core.order.EnvironmentPropertyLoader;
+import pages.Order;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import net.thucydides.core.annotations.Step;
-import order.OrderService;
+import core.order.OrderService;
 
 
-public class SampleTestPetStore {
+public class ResponseCodesTestPetStore {
     private final Order order = OrderService.createDefaultOrder();
 
     private RequestSpecification given(){

@@ -1,12 +1,9 @@
-package order;
+package core.order;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+import pages.Order;
+
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
 import java.util.Random;
 
 public class OrderService {

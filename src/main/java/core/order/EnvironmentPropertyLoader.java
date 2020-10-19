@@ -1,6 +1,8 @@
-package order;
+package core.order;
 
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-@Slf4j
+
 public class EnvironmentPropertyLoader {
 
     private static EnvironmentPropertyLoader env = new EnvironmentPropertyLoader();
@@ -18,6 +20,8 @@ public class EnvironmentPropertyLoader {
     private EnvironmentPropertyLoader() {
 
     }
+
+    private static Logger log = LoggerFactory.getLogger(EnvironmentPropertyLoader.class);
 
     private static void initIfNotInitialized() {
         if (!isInitialized) {

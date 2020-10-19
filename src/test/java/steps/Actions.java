@@ -1,13 +1,10 @@
 package steps;
 
-import cucumber.api.java.mk_latn.No;
-import order.Order;
+import pages.Order;
 import endpointRequests.StoreController;
 import io.restassured.response.Response;
 import org.junit.Assert;
-import order.NotFoundOrderObject;
-
-import java.sql.SQLOutput;
+import core.order.NotFoundOrderObject;
 
 public class Actions {
     private final StoreController storeController = new StoreController();

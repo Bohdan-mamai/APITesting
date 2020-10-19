@@ -6,12 +6,9 @@ import io.restassured.response.Response;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import order.EnvironmentPropertyLoader;
-import order.Order;
-import org.jruby.ast.CallOneArgBlockNode;
-import steps.Config;
-
-import java.lang.reflect.Type;
+import core.order.EnvironmentPropertyLoader;
+import pages.Order;
+import core.order.Config;
 
 
 public class StoreController {

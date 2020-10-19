@@ -1,24 +1,13 @@
 package steps;
 
-        import com.google.gson.Gson;
-        import com.google.gson.GsonBuilder;
-        import io.restassured.RestAssured;
-        import io.restassured.http.ContentType;
-        import io.restassured.specification.RequestSpecification;
-        import order.Order;
+        import pages.Order;
         import net.thucydides.core.annotations.Step;
 //        import order.OrderService;
-        import order.OrderService;
+        import core.order.OrderService;
         import org.junit.Assert;
 
-        import java.text.SimpleDateFormat;
-        import java.time.LocalDateTime;
-        import java.time.ZoneId;
-        import java.time.format.DateTimeFormatter;
-        import java.util.TimeZone;
 
-
-public class SecondScenarioTestPetStore {
+public class CheckBodyTestPetStore {
     private final Order order = OrderService.createDefaultOrder();
 
     private final Actions actions = new Actions();
